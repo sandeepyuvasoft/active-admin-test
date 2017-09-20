@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: active-admin-test_development
+  username: root
+  password: root
+
+# test:
+#   <<: *default
+#   database: active-admin-test_test
+
+# production:
+#   <<: *default
+#   database: active-admin-test_production
+#   username: active-admin-test
+#   password: <%= ENV['ACTIVE-ADMIN-TEST_DATABASE_PASSWORD'] %>
